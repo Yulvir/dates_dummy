@@ -6,7 +6,7 @@ from Config import config
 
 def generate_report_xlsx(dates_list, frame_dates_list, output_name):
 
-    workbook = xlsxwriter.Workbook(f'../output/{output_name}.xlsx')
+    workbook = xlsxwriter.Workbook(f'output/{output_name}.xlsx')
     worksheet = workbook.add_worksheet()
     text_format = workbook.add_format({'text_wrap': True, 'valign': 'vcenter'})
 
